@@ -1,0 +1,67 @@
+.admin-btn {
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 1.1rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.admin-btn--primary {
+  background: var(--sky);
+  color: #ffffff;
+}
+
+.admin-btn--primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.admin-btn--danger {
+  background: rgba(179, 65, 44, 0.1);
+  color: var(--danger);
+}
+
+.admin-btn--ghost {
+  background: var(--mist);
+  color: var(--ink);
+}
+
+.admin-link {
+  background: none;
+  border: none;
+  color: var(--sky);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.2rem 0;
+}
+
+.admin-link:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.admin-link--success {
+  color: var(--success);
+}
+
+.admin-link--danger {
+  color: var(--danger);
+}
+
+.admin-section {
+  background: var(--paper);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(11, 37, 69, 0.06);
+  padding: 1.6rem 1.6rem 1.8rem;
+}
+
+.admin-toast {
+  background: rgba(30, 142, 90, 0.1);
+  color: var(--success);
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}

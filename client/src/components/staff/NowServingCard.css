@@ -1,0 +1,47 @@
+.now-serving {
+  background: linear-gradient(135deg, var(--ink) 0%, var(--ink-2) 100%);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2rem 1.8rem;
+  color: #ffffff;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.now-serving--empty {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px dashed rgba(11, 37, 69, 0.16);
+  box-shadow: none;
+}
+
+.now-serving__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.now-serving__token {
+  font-family: var(--font-mono);
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+.now-serving__placeholder {
+  font-size: 1.1rem;
+  color: var(--grey);
+  padding: 0.6rem 0;
+}
+
+.now-serving__service {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}

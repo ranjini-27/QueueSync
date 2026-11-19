@@ -1,0 +1,96 @@
+.kiosk-welcome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2.5rem;
+  background: linear-gradient(160deg, var(--ink) 0%, var(--ink-2) 60%, var(--sky) 160%);
+  border: none;
+  cursor: pointer;
+  color: var(--paper);
+  font-family: var(--font-body);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.kiosk-welcome__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  align-self: flex-start;
+}
+
+.kiosk-welcome__brand-mark {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--brass);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+}
+
+.kiosk-welcome__brand-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--paper);
+}
+
+.kiosk-welcome__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  text-align: center;
+}
+
+.kiosk-welcome__center h1 {
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  color: var(--paper);
+  letter-spacing: -0.01em;
+}
+
+.kiosk-welcome__center p {
+  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 32ch;
+}
+
+.kiosk-welcome__cta {
+  margin-top: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1.1rem 2.4rem;
+  border-radius: 999px;
+  background: var(--sky);
+  color: var(--paper);
+  font-size: 1.25rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-lg);
+  animation: kiosk-pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes kiosk-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.045); }
+}
+
+.kiosk-welcome__clock {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.03em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kiosk-welcome__cta {
+    animation: none;
+  }
+}

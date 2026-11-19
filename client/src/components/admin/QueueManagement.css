@@ -1,0 +1,38 @@
+.queue-mgmt h2 {
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+}
+
+.queue-mgmt__card {
+  border: 1px solid rgba(179, 65, 44, 0.2);
+  background: rgba(179, 65, 44, 0.04);
+  border-radius: var(--radius-md);
+  padding: 1.3rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.queue-mgmt__card strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.queue-mgmt__card p {
+  font-size: 0.85rem;
+  max-width: 480px;
+}
+
+.queue-mgmt__confirm {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.queue-mgmt__confirm span {
+  font-size: 0.85rem;
+  color: var(--ink);
+  font-weight: 600;
+}

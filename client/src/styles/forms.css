@@ -1,0 +1,88 @@
+.form h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.field {
+  margin-bottom: 1.1rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid rgba(11, 37, 69, 0.16);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--ink);
+  background: var(--paper);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: var(--sky);
+  box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.15);
+}
+
+.field-error {
+  color: var(--danger);
+  font-size: 0.78rem;
+  margin-top: 0.35rem;
+}
+
+.form-error-banner {
+  background: rgba(179, 65, 44, 0.08);
+  border: 1px solid rgba(179, 65, 44, 0.25);
+  color: var(--danger);
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-success-banner {
+  background: rgba(30, 142, 90, 0.08);
+  border: 1px solid rgba(30, 142, 90, 0.25);
+  color: var(--success);
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 0.4rem;
+  background: var(--sky);
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.94rem;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.form-submit:hover:not(:disabled) {
+  background: #3d7fc4;
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-link {
+  color: var(--sky);
+  font-weight: 600;
+}

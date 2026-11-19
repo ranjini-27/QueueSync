@@ -1,0 +1,15 @@
+.reports-panel h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.reports-panel__hint {
+  font-size: 0.85rem;
+  margin-bottom: 1.3rem;
+  max-width: 480px;
+}
+
+.reports-panel__actions {
+  display: flex;
+  gap: 0.8rem;
+}

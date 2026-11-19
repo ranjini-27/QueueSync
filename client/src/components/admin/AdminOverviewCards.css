@@ -1,0 +1,50 @@
+.admin-overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.admin-overview__card {
+  background: var(--paper);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(11, 37, 69, 0.06);
+  padding: 1.3rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.admin-overview__card--muted {
+  background: var(--mist);
+  border-style: dashed;
+}
+
+.admin-overview__value {
+  font-family: var(--font-mono);
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.admin-overview__card--muted .admin-overview__value {
+  color: var(--grey-light);
+}
+
+.admin-overview__label {
+  font-size: 0.82rem;
+  color: var(--grey);
+}
+
+.admin-overview__note {
+  font-size: 0.72rem;
+  color: var(--grey-light);
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .admin-overview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

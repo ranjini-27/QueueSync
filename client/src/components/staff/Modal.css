@@ -1,0 +1,139 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 37, 69, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 1rem;
+}
+
+.modal {
+  background: var(--paper);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 440px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 1.3rem;
+  border-bottom: 1px solid rgba(11, 37, 69, 0.08);
+}
+
+.modal__header h3 {
+  font-size: 1.05rem;
+}
+
+.modal__close {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--grey);
+}
+
+.modal__body {
+  padding: 1.3rem;
+}
+
+.modal-hint {
+  color: var(--grey);
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+
+.modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--ink);
+  margin-bottom: 1.2rem;
+}
+
+.modal-field input {
+  border: 1px solid rgba(11, 37, 69, 0.16);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+.modal-btn {
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 1.1rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.modal-btn--ghost {
+  background: var(--mist);
+  color: var(--ink);
+}
+
+.modal-btn--primary {
+  background: var(--sky);
+  color: #ffffff;
+}
+
+.modal-btn--primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.manual-call-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.manual-call-list__item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.6rem auto 1fr;
+  align-items: center;
+  gap: 0.7rem;
+  background: var(--mist);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.8rem;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.manual-call-list__item:not(:disabled):hover {
+  background: var(--sky-tint);
+}
+
+.manual-call-list__pos {
+  font-family: var(--font-mono);
+  color: var(--grey);
+}
+
+.manual-call-list__token {
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.manual-call-list__service {
+  color: var(--grey);
+}

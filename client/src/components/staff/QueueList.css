@@ -1,0 +1,79 @@
+.queue-list {
+  background: var(--paper);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(11, 37, 69, 0.06);
+  padding: 1.3rem;
+}
+
+.queue-list__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.queue-list__header h3 {
+  font-size: 1rem;
+}
+
+.queue-list__count {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--grey);
+}
+
+.queue-list__empty {
+  color: var(--grey);
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+.queue-list__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.queue-list__item {
+  display: grid;
+  grid-template-columns: 1.6rem auto 1fr auto auto;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0.7rem;
+  border-radius: var(--radius-sm);
+  background: var(--mist);
+  font-size: 0.85rem;
+}
+
+.queue-list__position {
+  font-family: var(--font-mono);
+  color: var(--grey);
+}
+
+.queue-list__token {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.queue-list__service {
+  color: var(--grey);
+}
+
+.queue-list__customer {
+  color: var(--ink);
+  text-align: right;
+}
+
+.queue-list__wait {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--sky);
+  white-space: nowrap;
+}

@@ -1,0 +1,114 @@
+.pending-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  min-height: 100vh;
+}
+
+.pending-page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pending-page__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--sky);
+  text-transform: uppercase;
+}
+
+.pending-page__header h1 {
+  font-size: 1.6rem;
+  margin-top: 0.4rem;
+}
+
+.pending-page__account {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.88rem;
+  color: var(--grey);
+}
+
+.pending-page__account button {
+  background: none;
+  border: 1px solid rgba(11, 37, 69, 0.16);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.8rem;
+  font-size: 0.82rem;
+  color: var(--ink);
+}
+
+.pending-page__empty {
+  color: var(--grey);
+  padding: 2rem 0;
+}
+
+.pending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.pending-card {
+  background: var(--paper);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(11, 37, 69, 0.06);
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pending-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.pending-card__info strong {
+  font-size: 1rem;
+}
+
+.pending-card__info span {
+  font-size: 0.82rem;
+  color: var(--grey);
+}
+
+.pending-card__actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.pending-card__approve,
+.pending-card__reject {
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.pending-card__approve {
+  background: var(--success);
+  color: #ffffff;
+}
+
+.pending-card__reject {
+  background: rgba(179, 65, 44, 0.1);
+  color: var(--danger);
+}
+
+.pending-card__approve:disabled,
+.pending-card__reject:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

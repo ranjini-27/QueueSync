@@ -1,0 +1,113 @@
+.staff-mgmt__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.staff-mgmt__header h2 {
+  font-size: 1.15rem;
+}
+
+.staff-mgmt__hint,
+.staff-mgmt__empty {
+  color: var(--grey);
+  font-size: 0.88rem;
+  padding: 0.6rem 0 1rem;
+}
+
+.staff-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.staff-table__row {
+  display: grid;
+  grid-template-columns: 1.6fr 0.9fr 1.2fr 0.9fr 0.9fr 1fr;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(11, 37, 69, 0.06);
+  font-size: 0.86rem;
+}
+
+.staff-table__row--head {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--grey);
+  font-weight: 600;
+}
+
+.staff-table__name {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.staff-table__name small {
+  font-weight: 400;
+  color: var(--grey);
+  font-size: 0.76rem;
+}
+
+.staff-table select {
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid rgba(11, 37, 69, 0.16);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  background: var(--paper);
+}
+
+.staff-badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.staff-badge--approved {
+  background: rgba(30, 142, 90, 0.1);
+  color: var(--success);
+}
+
+.staff-badge--pending {
+  background: rgba(201, 117, 43, 0.12);
+  color: var(--warning);
+}
+
+.staff-badge--rejected {
+  background: rgba(179, 65, 44, 0.1);
+  color: var(--danger);
+}
+
+.staff-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.staff-table__actions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: flex-end;
+}
+
+@media (max-width: 900px) {
+  .staff-table__row {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .staff-table__row--head {
+    display: none;
+  }
+  .staff-table__actions {
+    justify-content: flex-start;
+  }
+}

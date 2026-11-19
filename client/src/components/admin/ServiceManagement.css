@@ -1,0 +1,48 @@
+.service-mgmt__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.service-mgmt__header h2 {
+  font-size: 1.15rem;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(11, 37, 69, 0.06);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.service-row__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.service-row__info span {
+  font-size: 0.8rem;
+  color: var(--grey);
+}
+
+.service-row__actions,
+.service-row__confirm {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.service-row__confirm span {
+  font-size: 0.82rem;
+  color: var(--grey);
+}

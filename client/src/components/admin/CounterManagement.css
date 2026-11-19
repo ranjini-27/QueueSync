@@ -1,0 +1,115 @@
+.counter-mgmt__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.counter-mgmt__header h2 {
+  font-size: 1.15rem;
+}
+
+.counter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.counter-card {
+  border: 1px solid rgba(11, 37, 69, 0.08);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.counter-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.counter-card__top strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.counter-card__prefix {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--grey);
+}
+
+.counter-card__status {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.counter-card__status--active {
+  background: rgba(30, 142, 90, 0.1);
+  color: var(--success);
+}
+
+.counter-card__status--paused {
+  background: rgba(201, 117, 43, 0.12);
+  color: var(--warning);
+}
+
+.counter-card__status--offline {
+  background: var(--mist);
+  color: var(--grey);
+}
+
+.counter-card__services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.counter-card__service {
+  background: var(--sky-tint);
+  color: var(--ink-2);
+  font-size: 0.72rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+}
+
+.counter-card__service--empty {
+  background: var(--mist);
+  color: var(--grey);
+}
+
+.counter-card__staff {
+  font-size: 0.8rem;
+  color: var(--grey);
+}
+
+.counter-card__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.4rem;
+  border-top: 1px solid rgba(11, 37, 69, 0.06);
+}
+
+.counter-service-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-height: 180px;
+  overflow-y: auto;
+  border: 1px solid rgba(11, 37, 69, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 0.8rem;
+}
+
+.counter-service-picker__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
